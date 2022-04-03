@@ -25,3 +25,24 @@ int main()
     cout<<"Minimum Number : "<< *min <<"\n";
     return 0;
 }
+/*Make a program in C++, determining the number of what day it is correspond
+using if...else statement */
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    string days[]={"Mon","Tue","Wed","Thru","Fri","Sat","Sun"};
+    int day;
+    cout<<"Enter day number(1 to 7): ";
+    cin>>day;
+    string dayName;
+    if(day>=1 and day<=7) {
+        dayName=days[day-1];
+        cout<<dayName;
+    }
+    else
+        cout<<"Wrong input";
+    
+    return 0;
+}
